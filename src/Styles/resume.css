@@ -1,0 +1,549 @@
+.resume{
+    height: 100vh;
+}
+.resumediv1{
+    /* border: 1px solid red; */
+    padding: 2vh;
+    box-sizing: border-box;
+    border-radius: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(250, 235, 215, 0.527);
+}
+.resumediv1>button{
+    padding: 2vh 6vh;
+    font-size: 2vh;
+    background-color: rgb(45, 45, 59);
+    color: white;
+    border-radius: 15vh;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.resumediv1>button:hover{
+    background-color: crimson;
+}
+
+.resumediv2{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    height: 40%;
+    box-sizing: border-box;
+    padding: 7vh 8vh;
+    position: relative;
+    bottom: 5%;
+    z-index: -1000;
+   background-color: rgba(177, 206, 183, 0.24);
+}
+.resumediv2>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.resumediv2>ul>li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.resumediv2>ul>li>h5{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    color: rgb(36, 36, 46);
+}
+.resumediv2>ul>li>p{
+    font-family: sans-serif;
+    font-weight: 200;
+    color: rgb(99, 95, 95);
+}
+
+.pricing{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    height: 60vh;
+}
+
+.pricing1{
+    width: 50%;
+    /* border: 1px solid crimson; */
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing1_child1{
+    /* border: 1px solid saddlebrown; */
+    height: 40%;
+    box-sizing: border-box;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pricing1_child1>h5{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-image:linear-gradient(to right, crimson, violet, indigo, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.pricing1_child1>h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: rgb(48, 48, 61);
+}
+
+.pricing1_child2{
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.pricing1_child2>h4{
+    /* border: 1px solid green; */
+    padding: 10vh 22vh;
+    font-family: sans-serif;
+    font-size: 2rem;
+    border-radius: 0 50px 50px 0;
+    /* background-color: rgb(180, 164, 140); */
+}
+.pricing1_child2>h4>strong{
+    color: crimson;
+    border-bottom: 1vh solid rgba(220, 20, 60, 0.548);
+}
+
+.pricing1_child2>img{
+    height: 350px;
+    position: absolute;
+    left: 6%;
+    animation: updown infinite alternate 1s;
+
+}
+
+
+
+@keyframes updown {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+
+.pricing2{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+}
+
+.pricing2_child1{
+    border: 1px solid crimson;
+    height: 46%;
+    padding: 4vh;
+    display: flex;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+    /* background-color: rgb(243, 235, 235); */
+}
+
+
+.pricing2_child1_div1>h2{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: rgb(33, 33, 41);
+}
+.pricing2_child1_div1>ul>li{
+    list-style: none;
+    font-family: sans-serif;
+    color: rgb(100, 94, 94);
+    margin: 2vh;
+}
+
+.pricing2_child1_div1>ul>li>svg{
+    /* border: 1px solid crimson; */
+    border-radius: 50%;
+    color: crimson;
+}
+.pricing2_child1_div1>button{
+    padding: 2vh 5vh;
+    background-color: crimson;
+    border: none;
+    border-radius: 25px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5vh;
+}
+
+
+
+.pricing2_child1_div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pricing2_child1_div2>h2{
+    font-size: 3rem;
+    color: rgb(56, 56, 68);
+}
+
+.pricing2_child1_div2>svg{
+    font-size: 4.5rem;
+    color: cyan;
+    /* border: 1px solid rgb(45, 45, 54); */
+    border-radius: 100%;
+    background-color: rgb(49, 49, 59);
+}
+
+
+
+.pricing2_child2{
+    height: 46%;
+    height: 46%;
+    padding: 4vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 235, 235);
+
+}
+
+.pricing2_child2_div1>h2{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: rgb(33, 33, 41);
+}
+.pricing2_child2_div1>ul>li{
+    list-style: none;
+    font-family: sans-serif;
+    color: rgb(100, 94, 94);
+    margin: 2vh;
+}
+
+.pricing2_child2_div1>ul>li>svg{
+    /* border: 1px solid crimson; */
+    border-radius: 50%;
+    color: crimson;
+}
+.pricing2_child2_div1>button{
+    padding: 2vh 5vh;
+    background-color: rgb(46, 46, 59);
+    border: none;
+    border-radius: 25px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5vh;
+}
+
+
+
+.pricing2_child2_div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pricing2_child2_div2>h2{
+    font-size: 3rem;
+    color: rgb(56, 56, 68);
+}
+
+.pricing2_child2_div2>svg{
+    font-size: 4.5rem;
+    color: rgb(230, 107, 25);
+    /* border: 1px solid rgb(45, 45, 54); */
+    /* border-radius: 100%; */
+    /* background-color: rgb(49, 49, 59); */
+}
+
+
+
+
+
+
+/* ---------------media query------------------- */
+
+@media screen and (max-width:480px){
+    .resume{
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid greenyellow; */
+    }
+    .resumediv1{
+        border: 1px solid red;
+        padding: 1vh;
+        box-sizing: border-box;
+        border-radius: 0;
+        /* display: flex; */
+        flex-direction: column;
+        width: 100%;
+        /* margin: auto; */
+        /* background-color: antiquewhite; */
+    }
+    .resumediv1>button{
+        margin:1vh;
+        padding: 2vh 17vh;
+        font-size: 2vh;
+        /* background-color: rgb(45, 45, 59); */
+        /* color: white; */
+        /* border-radius: 15vh; */
+        /* cursor: pointer;
+        transition: all 0.3s; */
+    }
+
+    
+    .resumediv2{
+        border: 1px solid red;
+        width: 100%;
+        margin: auto;
+        height: 40%;
+        box-sizing: border-box;
+        padding: 2vh 2vh;
+        position: relative;
+        /* bottom: 5%; */
+        /* z-index: -1000; */
+       /* background-color: rgb(177, 206, 183); */
+    }
+    .resumediv2>ul{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+    }
+    .resumediv2>ul>li{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5vh;
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+    
+    /* .resumediv2>ul>li>h5{
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        color: rgb(36, 36, 46);
+    }
+    .resumediv2>ul>li>p{
+        font-family: sans-serif;
+        font-weight: 200;
+        color: rgb(99, 95, 95);
+    } */
+    
+    .pricing{
+        /* border: 1px solid red; */
+        box-sizing: border-box;
+        width: 100%;
+        /* margin: auto; */
+        /* display: flex; */
+        flex-direction: column;
+        /* height: 30vh; */
+    }
+    
+    .pricing1{
+        width: 100%;
+        /* border: 1px solid crimson; */
+        display: flex;
+        /* flex-direction: row; */
+        border: 1px solid red;
+    }
+    
+    .pricing1_child1{
+        /* border: 1px solid saddlebrown; */
+        height: 40%;
+        box-sizing: border-box;
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .pricing1_child1>h5{
+        font-family: sans-serif;
+        text-transform: uppercase;
+        background-image:linear-gradient(to right, crimson, violet, indigo, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .pricing1_child1>h1{
+        font-family: sans-serif;
+        font-size: 2rem;
+        color: rgb(48, 48, 61);
+    }
+    
+    .pricing1_child2{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+    .pricing1_child2>h4{
+        /* border: 1px solid green; */
+        padding: 1vh 2vh;
+        font-family: sans-serif;
+        font-size: 2rem;
+        border-radius: 0 50px 50px 0;
+        /* background-color: rgb(180, 164, 140); */
+    }
+    .pricing1_child2>h4>strong{
+        color: crimson;
+        border-bottom: 0.5vh solid rgba(220, 20, 60, 0.548);
+    }
+    
+    .pricing1_child2>img{
+        display: none;
+        height: 350px;
+        position: absolute;
+        left: 6%;
+        animation: updown infinite alternate 1s;
+    
+    }
+    
+    .pricing2{
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* box-sizing: border-box; */
+    }
+    
+    .pricing2_child1{
+        border: 1px solid crimson;
+        height: 46%;
+        padding: 4vh;
+        display: flex;
+        justify-content: space-between;
+        /* box-sizing: border-box; */
+        /* background-color: rgb(243, 235, 235); */
+    }
+    
+    
+    .pricing2_child1_div1>h2{
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        color: rgb(33, 33, 41);
+    }
+    .pricing2_child1_div1>ul>li{
+        list-style: none;
+        font-family: sans-serif;
+        color: rgb(100, 94, 94);
+        margin: 2vh;
+    }
+    
+    .pricing2_child1_div1>ul>li>svg{
+        border: 1px solid crimson;
+        border-radius: 50%;
+        color: crimson;
+    }
+    .pricing2_child1_div1>button{
+        padding: 2vh 5vh;
+        background-color: crimson;
+        border: none;
+        border-radius: 25px;
+        font-family: sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1.5vh;
+    }
+    
+    
+    
+    .pricing2_child1_div2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pricing2_child1_div2>h2{
+        font-size: 3rem;
+        color: rgb(56, 56, 68);
+    }
+    
+    .pricing2_child1_div2>svg{
+        font-size: 4.5rem;
+        color: cyan;
+        border: 1px solid rgb(45, 45, 54);
+        border-radius: 100%;
+        background-color: rgb(49, 49, 59);
+    }
+    
+    
+    
+    .pricing2_child2{
+        height: 46%;
+        height: 46%;
+        padding: 4vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(243, 235, 235);
+    
+    }
+    
+    .pricing2_child2_div1>h2{
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        color: rgb(33, 33, 41);
+    }
+    .pricing2_child2_div1>ul>li{
+        list-style: none;
+        font-family: sans-serif;
+        color: rgb(100, 94, 94);
+        margin: 2vh;
+    }
+    
+    .pricing2_child2_div1>ul>li>svg{
+        border: 1px solid crimson;
+        border-radius: 50%;
+        color: crimson;
+    }
+    .pricing2_child2_div1>button{
+        padding: 2vh 5vh;
+        background-color: rgb(46, 46, 59);
+        border: none;
+        border-radius: 25px;
+        font-family: sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 1.5vh;
+    }
+    
+    
+    
+    .pricing2_child2_div2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pricing2_child2_div2>h2{
+        font-size: 3rem;
+        color: rgb(56, 56, 68);
+    }
+    
+    .pricing2_child2_div2>svg{
+        font-size: 4.5rem;
+        color: rgb(230, 107, 25);
+        /* border: 1px solid rgb(45, 45, 54); */
+        /* border-radius: 100%; */
+        /* background-color: rgb(49, 49, 59); */
+    }
+}

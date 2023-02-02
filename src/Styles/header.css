@@ -1,0 +1,128 @@
+header{
+    height: 100vh;
+    width: 12vh;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* width: 110px; */
+    background: var(--white);
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(224, 222, 222);
+}
+.logo{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(142, 211, 188);
+}
+.logo>a{
+    text-decoration: none;
+    color: crimson;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+.menu{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu>a{
+    text-decoration: none;
+    color: black;
+    font-size: 5vh;
+    transition: all 0.3s;
+    border-bottom: 1px solid grey;
+}
+
+.menu>a:hover{
+    color: crimson;
+}
+
+.video{
+    height: 15%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.video>a{
+    font-size: 5vh;
+    color: black;
+}
+
+/* ---------media query---------- */
+
+
+
+
+
+
+@media screen and (max-width:480px){
+    .header{
+      width: 100%;
+      height: 100%;
+      /* border: 1px solid red; */
+      position: unset;
+      position: sticky;
+    }
+  
+  .header>nav{
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid red;  */
+    align-items: center;
+    padding: 1vh 0;
+    justify-content: space-between;
+  }
+  .header>nav>.logo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(220, 226, 231);
+    /* border: 2px solid black; */
+  }
+  .header>nav>.logo>a{
+    color: crimson;
+    font-size: 3vh;
+    font-weight: 100;
+  }
+  
+  .header>nav>.menu{
+    width: 70%;
+    flex-direction: row;
+  }
+.menu>a{
+    font-size: 3vh;
+    border-right: 1px solid grey;
+    border-bottom: none;
+    padding-right: 1vh;
+  }
+  
+  .header>nav>.video{
+    width: 15%;
+    background-color: rgb(226, 226, 218);
+  }
+  .header>nav>.video>a{
+    font-size: 3vh;
+  }
+  
+  
+  }
