@@ -34,6 +34,9 @@ nav{
     font-size: 5vh;
     font-weight: bolder;
 }
+.logo>a>svg{
+  font-size: 4vw;
+}
 
 .menu{
     height: 70%;
@@ -45,7 +48,7 @@ nav{
 .menu>a{
     text-decoration: none;
     color: black;
-    font-size: 5vh;
+    font-size: 2vw;
     transition: all 0.3s;
     border-bottom: 1px solid grey;
 }
