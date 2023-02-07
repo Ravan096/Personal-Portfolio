@@ -4,6 +4,7 @@ import {AiOutlineHome,AiOutlineSetting,AiOutlineUser,AiOutlinePlayCircle} from '
 import {BsBriefcase} from 'react-icons/bs';
 import {GrNotes} from 'react-icons/gr';
 import {RiWechatLine} from 'react-icons/ri';
+import {GiBoomerangSun} from 'react-icons/gi'; 
 import '../Styles/header.css';
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
     <header className='header'>
       <nav>
       <div className='logo'>
-          <Link to={"/"}>Port</Link>
+          <Link to={"/"}><GiBoomerangSun/></Link>
         </div>
         <div className='menu'>
           <Link to={"/"}><AiOutlineHome/></Link>
